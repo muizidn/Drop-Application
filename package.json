@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "react": "18.0.0",
+    "react-devtools": "^4.25.0",
     "react-native": "0.69.5"
   },
   "devDependencies": {

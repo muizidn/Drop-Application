@@ -30,6 +30,7 @@ import {
 import {
   LoginView
 } from './Modules/Login/LoginView'
+import EventLogger from './EventLogger';
 
 const Section = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -78,7 +79,17 @@ const App = () => {
           }}>
           <Section >
             <LoginView />
-          </Section> 
+            <Button
+              onPress={() => {
+                EventLogger.addEvent("today", "jakarta", 1, (error, string) => {
+                  console.log(error, string)
+                })
+              }}
+              title="Learn More"
+              color="#841584"
+              accessibilityLabel="Learn more about this purple button"
+            />
+          </Section>
         </View>
       </ScrollView>
     </SafeAreaView>

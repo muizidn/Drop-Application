@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface AweseomeProject3Tests : XCTestCase
+@interface DropTests : XCTestCase
 
 @end
 
-@implementation AweseomeProject3Tests
+@implementation DropTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {

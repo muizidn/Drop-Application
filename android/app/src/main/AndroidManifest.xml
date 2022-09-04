@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.aweseomeproject3">
+  package="com.drop">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

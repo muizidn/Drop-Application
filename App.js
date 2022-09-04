@@ -28,8 +28,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import {
-  LoginView
-} from './Modules/Login/LoginView'
+  OnboardingView
+} from './Modules/Onboarding/OnboardingView'
 
 const Section = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -77,7 +77,7 @@ const App = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section >
-            <LoginView />
+            <OnboardingView />
           </Section> 
         </View>
       </ScrollView>

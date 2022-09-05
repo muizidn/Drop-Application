@@ -31,6 +31,7 @@ import {
   OnboardingView
 } from './Modules/Onboarding/OnboardingView'
 import EventLogger from './EventLogger';
+import { NativeLoginScreenView } from 'native-login-screen';
 
 const Section = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -89,6 +90,7 @@ const App = () => {
               color="#841584"
               accessibilityLabel="Learn more about this purple button"
             />
+            <NativeLoginScreenView color="#32a852" style={styles.box} />
           </Section>
         </View>
       </ScrollView>
@@ -113,6 +115,11 @@ const styles = StyleSheet.create({
   highlight: {
     fontWeight: '700',
   },
+  box: {
+    width: 60,
+    height: 60,
+    marginVertical: 20,
+  }
 });
 
 export default App;

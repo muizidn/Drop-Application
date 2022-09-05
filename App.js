@@ -28,8 +28,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import {
-  LoginView
-} from './Modules/Login/LoginView'
+  OnboardingView
+} from './Modules/Onboarding/OnboardingView'
 import EventLogger from './EventLogger';
 
 const Section = ({ children, title }) => {
@@ -78,11 +78,11 @@ const App = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section >
-            <LoginView />
+            <OnboardingView />
             <Button
               onPress={() => {
                 EventLogger.addEvent("today", "jakarta", 1, (error, string) => {
-                  console.log(error, string)
+                  console.log("error", error, "value",string)
                 })
               }}
               title="Learn More"

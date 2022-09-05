@@ -1,6 +1,6 @@
 //
 //  EventLoggerBridge.m
-//  AweseomeProject3
+//  Drop
 //
 //  Created by M on 03/09/22.
 //
